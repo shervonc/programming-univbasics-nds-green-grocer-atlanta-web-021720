@@ -1,5 +1,6 @@
 require_relative 'grocer'
 
+
 def items
 	[
 		{"AVOCADO" => {:price => 3.00, :clearance => true}},
@@ -21,6 +22,11 @@ def coupons
 		{:item => "CHEESE", :num => 3, :cost => 15.00}
 	]
 end
+
+
+ 
+ 
+
 
 def generate_cart
 	[].tap do |cart|
@@ -55,3 +61,4 @@ coupons.each do |coupon|
 end
 
 puts "Your total is #{checkout(cart: cart, coupons: coupons)}"
+
